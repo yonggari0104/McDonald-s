@@ -1,7 +1,6 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import numpy as np
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -194,11 +193,6 @@ print('threshold is', threshold)
 
 mcd["cal_level"]=["high" if i>threshold else "low" for i in mcd['Calories']]
 print(mcd.loc[:15,["cal_level","Calories","Item"]])
-
-
-#%%
-
-
 
 
 
